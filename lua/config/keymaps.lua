@@ -17,26 +17,38 @@ map("n", "<C-q>", "<cmd>q<cr>", { desc = "Delete buffer" })
 -- format buffer
 map("n", "<C-e>", "<cmd>lua vim.lsp.buf.format()<cr>", { desc = "Format buffer" })
 
+-- save file
 map({ "i", "v", "n", "s" }, "<C-s>", "<cmd>silent write<cr><esc>", { desc = "Save file" })
+
+-- zen mode
 map("n", "<leader><C-l>", "<cmd>silent ZenMode<cr>", { desc = "Zen mode" })
 
+-- make directory
+map("n", "<leader>md", '<cmd>call mkdir(expand("%:p:h"), "p")<cr>', { desc = "Make directory" })
+
+-- toggle format on save
 map("n", "<leader>uf", require("lazyvim.plugins.lsp.format").toggle, { desc = "Toggle format on Save" })
 
+-- toggle spelling
 map("n", "<leader>us", function()
   Util.toggle("spell", true)
 end, { desc = "Toggle Spelling" })
 
+-- toggle wrap
 map("n", "<leader>uw", function()
   Util.toggle("wrap", true)
 end, { desc = "Toggle Word Wrap" })
 
+-- toggle numbers
 map("n", "<leader>ul", function()
   Util.toggle("relativenumber", true)
   Util.toggle("number")
 end, { desc = "Toggle Line Numbers" })
 
+-- toggle diagnostics -- modified source
 map("n", "<leader>ud", Util.toggle_diagnostics(true), { desc = "Toggle Diagnostics" })
 
+-- toggle conceallevel
 local conceallevel = vim.o.conceallevel > 0 and vim.o.conceallevel or 3
 map("n", "<leader>uc", function()
   Util.toggle("conceallevel", false, { 0, conceallevel })

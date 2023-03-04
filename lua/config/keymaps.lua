@@ -26,6 +26,11 @@ map("n", "<leader><C-l>", "<cmd>silent ZenMode<cr>", { desc = "Zen mode" })
 -- make directory
 map("n", "<leader>md", '<cmd>call mkdir(expand("%:p:h"), "p")<cr>', { desc = "Make directory" })
 
+-- lazygit
+map("n", "<leader>gG", function()
+  Util.float_term({ "lazygit" }, { cwd = Util.get_root() })
+end, { desc = "Lazygit (root dir)" })
+
 -- toggle format on save
 map("n", "<leader>uf", require("lazyvim.plugins.lsp.format").toggle, { desc = "Toggle format on Save" })
 

@@ -8,7 +8,7 @@ return {
     highlight_hovered_item = true,
     show_guides = true,
     auto_preview = false,
-    position = "right",
+    position = "left",
     relative_width = true,
     width = 25,
     auto_close = false,

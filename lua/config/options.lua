@@ -11,3 +11,7 @@ opt.foldmethod = "expr"
 opt.foldlevel = 99
 opt.modelines = 1
 vim.cmd([[set foldexpr=nvim_treesitter#foldexpr()]])
+
+opt.number = false
+opt.relativenumber = false
+opt.swapfile = false

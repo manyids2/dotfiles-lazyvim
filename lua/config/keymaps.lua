@@ -55,7 +55,7 @@ map("n", "<leader>ul", function()
 end, { desc = "Toggle Line Numbers" })
 
 -- toggle diagnostics -- modified source
-map("n", "<leader>ud", Util.toggle_diagnostics(true), { desc = "Toggle Diagnostics" })
+map("n", "<leader>ud", Util.toggle_diagnostics, { desc = "Toggle Diagnostics" })
 
 -- toggle conceallevel
 local conceallevel = vim.o.conceallevel > 0 and vim.o.conceallevel or 3

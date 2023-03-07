@@ -24,7 +24,11 @@ map({ "i", "v", "n", "s" }, "<C-s>", "<cmd>silent write<cr><esc>", { desc = "Sav
 map("n", "<leader><C-l>", "<cmd>silent ZenMode<cr>", { desc = "Zen mode" })
 
 -- make directory
-map("n", "<leader>md", '<cmd>call mkdir(expand("%:p:h"), "p")<cr>', { desc = "Make directory" })
+map("n", "<leader>mn", '<cmd>call mkdir(expand("%:p:h"), "p")<cr>', { desc = "Make directory" })
+
+-- make docs
+map("n", "<leader>mm", "<cmd>!make -C docs/ html<cr>", { desc = "Make docs" })
+map("n", "<leader>mM", "<cmd>!rm -r docs/build; make -C docs/ html<cr>", { desc = "Make docs after deleting build" })
 
 -- lazygit
 map("n", "<leader>gG", function()

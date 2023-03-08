@@ -11,6 +11,8 @@ local function map(mode, lhs, rhs, opts)
   end
 end
 
+map("n", "<leader>ll", "<cmd>:Lazy<cr>", { desc = "Lazy" })
+
 -- ctrl-q to delete buffer
 map("n", "<C-q>", "<cmd>q<cr>", { desc = "Delete buffer" })
 

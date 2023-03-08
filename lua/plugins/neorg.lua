@@ -3,11 +3,13 @@ return {
   run = ":Neorg sync-parsers", -- This is the important bit!
   cmd = { "Neorg" },
   keys = {
-    { "<A-n>n", "<cmd>Neorg workspace notes<cr>", desc = "Neorg set workspace" },
-    { "<A-n>;", "<cmd>Neorg return<cr>", desc = "Neorg close buffers" },
-    { "<A-n>i", "<cmd>Neorg journal toc<cr>", desc = "Neorg journal index" },
-    { "<A-n>t", "<cmd>Neorg journal today<cr>", desc = "Neorg journal today" },
-    { "<A-n>y", "<cmd>Neorg journal yesterday<cr>", desc = "Neorg journal yesterday" },
+    { "<leader>nn", "<cmd>Neorg workspace notes<cr>", desc = "Neorg set workspace" },
+    { "<leader>n;", "<cmd>Neorg return<cr>", desc = "Neorg close buffers" },
+    { "<leader>n.", "<cmd>Neorg toggle-concealer<cr>", desc = "Neorg toggle concealer" },
+    { "<leader>ni", "<cmd>Neorg journal toc<cr>", desc = "Neorg journal index" },
+    { "<leader>nt", "<cmd>Neorg journal today<cr>", desc = "Neorg journal today" },
+    { "<leader>ny", "<cmd>Neorg journal yesterday<cr>", desc = "Neorg journal yesterday" },
+    { "<leader>np", "<cmd>Neorg presenter<cr>", desc = "Neorg presenter" },
   },
   opts = {
     load = {

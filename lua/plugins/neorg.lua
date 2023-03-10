@@ -9,7 +9,7 @@ return {
     { "<leader>ni", "<cmd>Neorg journal toc<cr>", desc = "Neorg journal index" },
     { "<leader>nt", "<cmd>Neorg journal today<cr>", desc = "Neorg journal today" },
     { "<leader>ny", "<cmd>Neorg journal yesterday<cr>", desc = "Neorg journal yesterday" },
-    { "<leader>np", "<cmd>Neorg presenter<cr>", desc = "Neorg presenter" },
+    { "<leader>np", "<cmd>Neorg presenter start<cr>", desc = "Neorg presenter" },
   },
   opts = {
     load = {

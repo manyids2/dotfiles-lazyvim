@@ -36,6 +36,7 @@ map("n", "<leader>mM", "<cmd>!rm -r docs/build; make -C docs/ html<cr>", { desc 
 map("n", "<leader>gG", function()
   Util.float_term({ "lazygit" }, { cwd = Util.get_root() })
 end, { desc = "Lazygit (root dir)" })
+map("n", "<leader>gw", "<cmd>Gwrite<cr>", { desc = "Write to git" })
 
 -- toggle format on save
 map("n", "<leader>uf", require("lazyvim.plugins.lsp.format").toggle, { desc = "Toggle format on Save" })

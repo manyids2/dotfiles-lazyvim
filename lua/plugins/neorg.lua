@@ -10,6 +10,14 @@ return {
     { "<leader>nt", "<cmd>Neorg journal today<cr>", desc = "Neorg journal today" },
     { "<leader>ny", "<cmd>Neorg journal yesterday<cr>", desc = "Neorg journal yesterday" },
     { "<leader>np", "<cmd>Neorg presenter start<cr>", desc = "Neorg presenter" },
+    -- gtd
+    { "gtd", "gtd", desc = "done" },
+    { "gtu", "gtu", desc = "undone" },
+    { "gtp", "gtp", desc = "pending" },
+    { "gth", "gth", desc = "on_hold" },
+    { "gtc", "gtc", desc = "cancelled" },
+    { "gtr", "gtr", desc = "recurring" },
+    { "gti", "gti", desc = "important" },
   },
   opts = {
     load = {

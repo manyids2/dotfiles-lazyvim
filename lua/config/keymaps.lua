@@ -32,6 +32,11 @@ map("n", "<leader>mn", '<cmd>call mkdir(expand("%:p:h"), "p")<cr>', { desc = "Ma
 map("n", "<leader>mm", "<cmd>!make -C docs/ html<cr>", { desc = "Make docs" })
 map("n", "<leader>mM", "<cmd>!rm -r docs/build; make -C docs/ html<cr>", { desc = "Make docs after deleting build" })
 
+-- telescope
+map("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Find files" })
+map("n", "<leader>fg", "<cmd>Telescope grep_string<cr>", { desc = "Find string in all files" })
+map("n", "<leader>fm", "<cmd>Telescope marks<cr>", { desc = "Find marks" })
+
 -- lazygit
 map("n", "<leader>gG", function()
   Util.float_term({ "lazygit" }, { cwd = Util.get_root() })

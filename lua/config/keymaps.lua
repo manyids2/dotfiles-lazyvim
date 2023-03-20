@@ -16,7 +16,7 @@ map("n", "<leader>ll", "<cmd>:Lazy<cr>", { desc = "Lazy" })
 -- various quits
 map("n", "<C-q>", "<cmd>q<cr>", { desc = "Quit" })
 map("n", "<leader>Q", "<cmd>q!<cr>", { desc = "Quit without saving" })
-map("n", "<leader><C-q>", "<cmd>db<cr>", { desc = "Delete buffer" })
+map("n", "<leader><C-q>", "<cmd>bd!<cr>", { desc = "Delete buffer" })
 
 -- format buffer
 map("n", "<C-e>", "<cmd>lua vim.lsp.buf.format()<cr>", { desc = "Format buffer" })

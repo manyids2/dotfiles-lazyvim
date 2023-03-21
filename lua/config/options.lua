@@ -15,3 +15,5 @@ vim.cmd([[set foldexpr=nvim_treesitter#foldexpr()]])
 opt.number = false
 opt.relativenumber = false
 opt.swapfile = false
+
+opt.background = "light"

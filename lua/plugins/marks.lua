@@ -1,5 +1,10 @@
 return {
   "chentoast/marks.nvim",
+  -- cmds = { "MarkToggleSigns", "MarkListAll", "MarkListBuf", "MarkListGlobal" },
+  -- keys = {
+  --   { "mt", "<cmd>MarkToggleSigns<cr>", desc = "Toggle mark signs" },
+  --   { "m.", "<cmd>MarkToggleSigns<cr>", desc = "Toggle mark signs" },
+  -- },
   opts = {
     -- whether to map keybinds or not. default true
     default_mappings = true,
@@ -32,6 +37,9 @@ return {
       -- defaults to false.
       annotate = false,
     },
-    mappings = {},
+    mappings = {
+      toggle = "m.",
+      set_bookmark0 = "m0",
+    },
   },
 }

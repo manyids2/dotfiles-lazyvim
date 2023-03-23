@@ -34,6 +34,10 @@ map("n", "<leader>mn", '<cmd>call mkdir(expand("%:p:h"), "p")<cr>', { desc = "Ma
 map("n", "<leader>mm", "<cmd>!make -C docs/ html<cr>", { desc = "Make docs" })
 map("n", "<leader>mM", "<cmd>!rm -r docs/build; make -C docs/ html<cr>", { desc = "Make docs after deleting build" })
 
+-- make using makefile
+map("n", "<leader>mc", "<cmd>make<cr>", { desc = "Make cmake project" })
+map("n", "<leader>ml", "<cmd>copen<cr>", { desc = "Open compile errors" })
+
 -- telescope
 map("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Find files" })
 map("n", "<leader>fg", "<cmd>Telescope grep_string<cr>", { desc = "Find string in all files" })

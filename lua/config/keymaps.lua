@@ -82,6 +82,8 @@ map("n", "<leader>ub", function()
   local background = vim.o.background
   if background == "dark" then
     background = "light"
+  else
+    background = "dark"
   end
   vim.o.background = background
 end, { desc = "Toggle background" })

@@ -18,7 +18,7 @@ return {
     initial_width = 35,
     hide_statusline = false,
     update_interval = 1000,
-    sections = { "git", "diagnostics" },
+    sections = { "git" },
     section_separator = { "", "-----", "" },
     section_title_separator = { "" },
   },

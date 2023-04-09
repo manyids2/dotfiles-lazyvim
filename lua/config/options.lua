@@ -16,4 +16,4 @@ opt.number = false
 opt.relativenumber = false
 opt.swapfile = false
 
-opt.background = "light"
+opt.background = "dark"

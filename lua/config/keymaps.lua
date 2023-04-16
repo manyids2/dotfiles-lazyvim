@@ -35,7 +35,8 @@ map("n", "<leader>mm", "<cmd>!make -C docs/ html<cr>", { desc = "Make docs" })
 map("n", "<leader>mM", "<cmd>!rm -r docs/build; make -C docs/ html<cr>", { desc = "Make docs after deleting build" })
 
 -- make using makefile
-map("n", "<leader>mc", "<cmd>make<cr>", { desc = "Make cmake project" })
+map("n", "<leader>mc", "<cmd>!cd build; make -j 6; cd ..;<cr>", { desc = "Make cmake project" })
+map("n", "<leader>mC", "<cmd>!rm -r build; mkdir build; cd build; cmake ..; make -j 6; cd ..;<cr>", { desc = "Force remake cmake project" })
 map("n", "<leader>ml", "<cmd>copen<cr>", { desc = "Open compile errors" })
 
 -- telescope

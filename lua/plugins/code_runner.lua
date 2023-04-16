@@ -7,7 +7,7 @@ return {
   config = function()
     require("code_runner").setup({
       filetype = {
-        python = "source .venv/bin/activate.fish; ipython -i --no-autoindent",
+        python = "source .venv/bin/activate.fish; ipython --profile (path basename (pwd))",
       },
       mode = "term",
       term = {

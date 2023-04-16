@@ -1,6 +1,6 @@
 return {
   "sidebar-nvim/sidebar.nvim",
-  cmds = {
+  cmd = {
     "SidebarNvimToggle",
     "SidebarNvimClose",
     "SidebarNvimOpen",

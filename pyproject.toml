@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "nvim_env"
+version = "0.1.0"
+description = "Env for nvim."
+authors = ["manyids2  <manyids2@gmail.com>"]
+
+[tool.poetry.dependencies]
+# Essentials
+python = "^3.10.2"
+pynvim = "^0.4.3"
+jupyter-client = "^8.2.0"
+pillow = "^9.5.0"
+cairosvg = "^2.7.0"
+pnglatex = "^1.1"
+plotly = "^5.14.1"
+ipykernel = "^6.22.0"
+term-image = "^0.6.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+

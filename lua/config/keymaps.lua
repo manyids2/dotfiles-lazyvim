@@ -11,7 +11,8 @@ local function map(mode, lhs, rhs, opts)
   end
 end
 
-map("n", "<leader>ll", "<cmd>:Lazy<cr>", { desc = "Lazy" })
+map("n", "<leader>ll", "<cmd>:Navbuddy<cr>", { desc = "Navbuddy" })
+map("n", "<leader>lz", "<cmd>:Lazy<cr>", { desc = "Lazy" })
 
 -- various quits
 map("n", "<C-q>", "<cmd>q<cr>", { desc = "Quit" })

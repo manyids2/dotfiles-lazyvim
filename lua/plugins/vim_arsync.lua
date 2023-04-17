@@ -1,6 +1,9 @@
 return {
   {
     "KenN7/vim-arsync",
+    dependencies = {
+        {'prabirshrestha/async.vim'}
+    },
     cmd = { "ARshowConf", "ARsyncUp", "ARsyncUpDelete", "ARsyncDown" },
     keys = {
       { "<leader>gg", "<cmd>ARsyncUpDelete<cr>", desc = "ARsyncUpDelete" },

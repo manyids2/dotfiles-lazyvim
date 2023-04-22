@@ -18,6 +18,7 @@ map("n", "<leader>lz", "<cmd>:Lazy<cr>", { desc = "Lazy" })
 map("n", "<C-q>", "<cmd>q<cr>", { desc = "Quit" })
 map("n", "<leader>Q", "<cmd>q!<cr>", { desc = "Quit without saving" })
 map("n", "<leader><C-q>", "<cmd>bd!<cr>", { desc = "Delete buffer" })
+map("n", "<PageDown>", "<C-w><C-w>", { desc = "Switch window" })
 
 -- format buffer
 map("n", "<C-e>", "<cmd>lua vim.lsp.buf.format()<cr>", { desc = "Format buffer" })
@@ -37,7 +38,12 @@ map("n", "<leader>mM", "<cmd>!rm -r docs/build; make -C docs/ html<cr>", { desc 
 
 -- make using makefile
 map("n", "<leader>mc", "<cmd>!cd build; make -j 6; cd ..;<cr>", { desc = "Make cmake project" })
-map("n", "<leader>mC", "<cmd>!rm -r build; mkdir build; cd build; cmake ..; make -j 6; cd ..;<cr>", { desc = "Force remake cmake project" })
+map(
+  "n",
+  "<leader>mC",
+  "<cmd>!rm -r build; mkdir build; cd build; cmake ..; make -j 6; cd ..;<cr>",
+  { desc = "Force remake cmake project" }
+)
 map("n", "<leader>ml", "<cmd>copen<cr>", { desc = "Open compile errors" })
 
 -- telescope

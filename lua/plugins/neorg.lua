@@ -1,6 +1,7 @@
 return {
   "nvim-neorg/neorg",
-  run = ":Neorg sync-parsers", -- This is the important bit!
+  ft="norg",
+  build = ":Neorg sync-parsers",
   cmd = { "Neorg" },
   keys = {
     { "<leader>nn", "<cmd>Neorg workspace notes<cr>", desc = "Neorg set workspace" },

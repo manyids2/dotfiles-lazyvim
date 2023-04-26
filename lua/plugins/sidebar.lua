@@ -1,5 +1,6 @@
 return {
   "sidebar-nvim/sidebar.nvim",
+  enabled = false,
   cmd = {
     "SidebarNvimToggle",
     "SidebarNvimClose",

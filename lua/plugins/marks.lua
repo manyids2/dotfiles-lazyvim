@@ -1,5 +1,6 @@
 return {
   "chentoast/marks.nvim",
+  enabled = false,
   -- cmds = { "MarkToggleSigns", "MarkListAll", "MarkListBuf", "MarkListGlobal" },
   -- keys = {
   --   { "mt", "<cmd>MarkToggleSigns<cr>", desc = "Toggle mark signs" },

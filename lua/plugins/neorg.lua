@@ -29,8 +29,8 @@ return {
           zen_mode = "zen-mode",
         },
       },
-      ["core.norg.concealer"] = {}, -- Adds pretty icons to your documents
-      ["core.norg.completion"] = {
+      ["core.concealer"] = {}, -- Adds pretty icons to your documents
+      ["core.completion"] = {
         config = {
           engine = "nvim-cmp",
         },
@@ -38,7 +38,7 @@ return {
       ["core.integrations.nvim-cmp"] = {},
       ["core.syntax"] = {},
       ["core.integrations.treesitter"] = {},
-      ["core.norg.dirman"] = { -- Manages Neorg workspaces
+      ["core.dirman"] = { -- Manages Neorg workspaces
         config = {
           workspaces = {
             notes = "~/notes",
@@ -46,7 +46,7 @@ return {
           default_workspace = "notes",
         },
       },
-      ["core.norg.journal"] = {
+      ["core.journal"] = {
         config = {
           journal_folder = "journal",
           strategy = "flat",

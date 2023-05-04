@@ -11,14 +11,20 @@ local function map(mode, lhs, rhs, opts)
   end
 end
 
-map("n", "<leader>ll", "<cmd>:Navbuddy<cr>", { desc = "Navbuddy" })
 map("n", "<leader>lz", "<cmd>:Lazy<cr>", { desc = "Lazy" })
+map("n", "<M-d>", "<cmd>:Navbuddy<cr>", { desc = "Navbuddy" })
+map("n", "<M-f>", "<cmd>silent ZenMode<cr>", { desc = "Zen mode" })
 
 -- various quits
-map("n", "<C-q>", "<cmd>q<cr>", { desc = "Quit" })
 map("n", "<leader>Q", "<cmd>q!<cr>", { desc = "Quit without saving" })
+map("n", "<C-q>", "<cmd>q<cr>", { desc = "Quit" })
 map("n", "<leader><C-q>", "<cmd>bd!<cr>", { desc = "Delete buffer" })
-map("n", "<PageDown>", "<C-w><C-w>", { desc = "Switch window" })
+
+-- split management
+map("n", "<tab>", "<cmd>wincmd w<cr>", { desc = "Next window" })
+map("n", "<S-tab>", "<cmd>wincmd W<cr>", { desc = "Prev window" })
+map("n", "+", "<cmd>set wh=999<cr><cmd>set wiw=999<cr>", { desc = "Maximize window" })
+map("n", "=", "<cmd>set wh=10<cr><cmd>set wiw=10<cr><cmd>wincmd =<cr>", { desc = "Equalize windows" })
 
 -- format buffer
 map("n", "<C-e>", "<cmd>lua vim.lsp.buf.format()<cr>", { desc = "Format buffer" })
@@ -26,8 +32,6 @@ map("n", "<C-e>", "<cmd>lua vim.lsp.buf.format()<cr>", { desc = "Format buffer" 
 -- save file
 map({ "i", "v", "n", "s" }, "<C-s>", "<cmd>silent write<cr><esc>", { desc = "Save file" })
 
--- zen mode
-map("n", "<leader><C-l>", "<cmd>silent ZenMode<cr>", { desc = "Zen mode" })
 
 -- make directory
 map("n", "<leader>mn", '<cmd>call mkdir(expand("%:p:h"), "p")<cr>', { desc = "Make directory" })

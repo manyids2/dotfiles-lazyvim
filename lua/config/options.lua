@@ -15,6 +15,8 @@ opt.number = false
 opt.relativenumber = false
 opt.swapfile = false
 
+opt.background = "light"
+
 local g = vim.g
 g.python_host_prog = "/home/x/.config/nvim/.venv/bin/python"
 g.python3_host_prog = "/home/x/.config/nvim/.venv/bin/python3"

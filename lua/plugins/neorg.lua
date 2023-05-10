@@ -22,22 +22,20 @@ return {
   },
   opts = {
     load = {
-      ["core.defaults"] = {}, -- Loads default behaviour
+      ["core.defaults"] = {},
       ["core.export"] = {},
-      ["core.presenter"] = {
-        config = {
-          zen_mode = "zen-mode",
-        },
-      },
-      ["core.concealer"] = {}, -- Adds pretty icons to your documents
+      ["core.concealer"] = {},
       ["core.completion"] = {
         config = {
           engine = "nvim-cmp",
         },
       },
       ["core.integrations.nvim-cmp"] = {},
-      ["core.syntax"] = {},
-      ["core.integrations.treesitter"] = {},
+      ["core.presenter"] = {
+        config = {
+          zen_mode = "zen-mode",
+        },
+      },
       ["core.dirman"] = { -- Manages Neorg workspaces
         config = {
           workspaces = {
@@ -46,6 +44,8 @@ return {
           default_workspace = "notes",
         },
       },
+      ["core.syntax"] = {},
+      ["core.integrations.treesitter"] = {},
       ["core.journal"] = {
         config = {
           journal_folder = "journal",

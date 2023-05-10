@@ -14,6 +14,8 @@ end
 map("n", "<leader>lz", "<cmd>:Lazy<cr>", { desc = "Lazy" })
 map("n", "<M-d>", "<cmd>:Navbuddy<cr>", { desc = "Navbuddy" })
 map("n", "<M-f>", "<cmd>silent ZenMode<cr>", { desc = "Zen mode" })
+map("n", "+", "<cmd>set wh=999<cr><cmd>set wiw=999<cr><cmd>wincmd |<cr><cmd>wincmd _<cr>", { desc = "Maximize splits" })
+map("n", "=", "<cmd>set wh=10<cr><cmd>set wiw=10<cr><cmd>wincmd =<cr>", { desc = "Equalize splits" })
 
 -- various quits
 map("n", "<leader>Q", "<cmd>q!<cr>", { desc = "Quit without saving" })
@@ -31,7 +33,6 @@ map("n", "<C-e>", "<cmd>lua vim.lsp.buf.format()<cr>", { desc = "Format buffer" 
 
 -- save file
 map({ "i", "v", "n", "s" }, "<C-s>", "<cmd>silent write<cr><esc>", { desc = "Save file" })
-
 
 -- make directory
 map("n", "<leader>mn", '<cmd>call mkdir(expand("%:p:h"), "p")<cr>', { desc = "Make directory" })

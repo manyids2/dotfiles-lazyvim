@@ -3,6 +3,7 @@ local opt = vim.opt
 -- local .nvim.lua file
 opt.exrc = true
 
+opt.sidescrolloff = 15
 opt.scrolloff = 15
 opt.shortmess:append({ W = true })
 

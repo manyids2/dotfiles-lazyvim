@@ -17,7 +17,7 @@ require("lazy").setup({
     -- import/override with your plugins
     -- { import = "lazyvim.plugins.extras.ui.mini-starter" },
     -- { import = "lazyvim.plugins.extras.ui.mini-animate" },
-    { import = "lazyvim.plugins.extras.ui.edgy" },
+    -- { import = "lazyvim.plugins.extras.ui.edgy" },
     { import = "plugins" },
   },
   defaults = {
@@ -29,7 +29,7 @@ require("lazy").setup({
     version = false, -- always use the latest git commit
     -- version = "*", -- try installing the latest stable version for plugins that support semver
   },
-  install = { colorscheme = { "tokyonight", "habamax", "moonfly", "nightfly", "oxocarbon" } },
+  install = { colorscheme = { "tokyonight", "habamax", "moonfly", "nightfly", "oxocarbon", "zenbones" } },
   checker = { enabled = false }, -- automatically check for plugin updates
   performance = {
     rtp = {
